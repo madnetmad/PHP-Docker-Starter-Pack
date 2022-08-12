@@ -1,5 +1,5 @@
 <?php
 
-$name = 'SocialNerds!';
+$name = 'world!';
 
 print('Hello ' . $name);

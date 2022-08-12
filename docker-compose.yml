@@ -10,7 +10,7 @@ services:
     container_name: app_http
     restart: always
     ports:
-      - 80:80
+      - 8088:80
       - 443:443
     volumes:
       - ./data/www:/home/serveruser/www:delegated
@@ -46,7 +46,7 @@ services:
     container_name: app_phpmyadmin
     restart: always
     ports:
-      - 8080:80
+      - 8081:80
     environment:
       PMA_HOST: db
       PHP_UPLOAD_MAX_FILESIZE: 67108864
